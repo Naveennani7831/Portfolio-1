@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #e9ecef;
+        }
+
+        .jumbotron {
+            background: #f4f4f4;
+            padding: 4rem 2rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 1rem 0;
+            list-style: none;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #007bff;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            width: 25px;
+            height: 25px;
+            background: #007bff;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -12.5px;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+            color: #007bff;
+        }
+
+        .timeline-item p {
+            margin: 0;
+        }
+
+        footer {
+            background: #f4f4f4;
+            padding: 1rem 0;
+        }
+
+        .project {
+            background-color: #cce5ff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Hello, I'm KARANGULANAVEEN</h1>
+            <p class="lead">WEB DEVELOPMENT</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">Hi, I am K. Naveen. I completed my B.Tech in Mechanical Engineering at Sri Indu College of Engineering and Technology. I aim to secure a challenging position in a dynamic company to utilize my skills for the organization's success while keeping up with the latest technologies.My journey in Frontend Developer began at 10k Coders. The development of my skills and creating my first project "DINE TABLE RESTAURANT" using HTML and CSS, and my second project is "WACK A MOLE" by using HTML, CSS & JAVASCRIPT .</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>HTML/CSS</h4>
+                    <p>HTML and CSS are fundamental technologies for creating web pages, providing structure and style for responsive and visually appealing designs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>JavaScript</h4>
+                    <p>JavaScript enhances web pages with interactive features, enabling dynamic content updates and improving user experience.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>React JS</h4>
+                    <p>ReactJS is a powerful library for building user interfaces, focusing on component-based architecture and efficient rendering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="project">
+                <h4>Dine Table Restaurant</h4>
+                <p>The provided HTML code creates a comprehensive restaurant website.
+                     It includes sections for home, details about the restaurant, menu, location with a map, contact information, upcoming events, and a footer.
+                     The design features a navigation bar, various sections styled with CSS for layout and presentation, including responsive design considerations.</p>
+            </div>
+            <div class="project">
+                <h4>Whack-a-Mole Game</h4>
+                <p>Interactive Gameplay: Hit the appearing moles to score points before they disappear.
+                    Time-Limited Challenge: The game runs for a fixed duration, testing speed and accuracy.  Custom Cursor and Sound Effects: Engaging visuals and audio enhance the experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 KARANGULANAVEEN. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
